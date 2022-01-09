@@ -18,8 +18,15 @@
     text-align: center;
 }
 
+/* obsluga gifa na stronie glownej */
+.main-gif{
+    background-image: url("https://bestanimations.com/media/yachts/627188316sailboat-yacht-sailing-animated-gif-11.gif");
+    height:60vh;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
 
-
+/* aby stopka "przyklejala sie" do dolu strony dla ekranow od szerokosci 1200px */
 @media(min-width:1200px){
     .footer-style{
         position: absolute;
@@ -27,4 +34,16 @@
         left:0;
         right:0;
     }
+}
+
+.jachty{
+    text-align: center;
+}
+
+.jachty-pojedynczy{
+    border: 1px solid black;
+}
+
+.zdjecie{
+    height:200px;
 }
