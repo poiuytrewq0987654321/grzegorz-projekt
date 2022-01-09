@@ -13,3 +13,18 @@
     background-size: contain;
     background-position-x: center;
 }
+
+.dane-kontaktowe{
+    text-align: center;
+}
+
+
+
+@media(min-width:1200px){
+    .footer-style{
+        position: absolute;
+        bottom:0;
+        left:0;
+        right:0;
+    }
+}
