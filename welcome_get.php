@@ -18,15 +18,14 @@ if ($conn->connect_error) {
 #echo "Connected successfully";
  
 // Attempt insert query execution
-$sql = "INSERT INTO jachty.rezerwacja (model_jachtu, imie_nazwisko, adres, telefon, email, data_od_kiedy, data_do_kiedy ) VALUES ('$model_jachtu', '$imie_nazwisko', '$adres', '$telefon', '$email', '$data_od_kiedy', '$data_do_kiedy')";
+$sql = "INSERT INTO jachty.rezerwacja (model_jachtu, imie_nazwisko, adres, telefon, email, data_od_kiedy, data_do_kiedy ) 
+VALUES ('$model_jachtu', '$imie_nazwisko', '$adres', '$telefon', '$email', '$data_od_kiedy', '$data_do_kiedy')";
 if(mysqli_query($conn, $sql)){
     header("Location: sukces.html");
-    exit();
-      // echo "rezerwacja poprawnie zapisana. Zapraszamy do naszej przystani w wybranym terminie!";
+      exit();
   } else{
-    header("Location: sukces.html");
-    exit();
-      // echo "Kurczę, nie udało się. Spróbuj ponownie. Opis błędu: $sql. " . mysqli_error($conn);
+    header("Location: porazka.html");
+      exit();
   }
  
 ?>
