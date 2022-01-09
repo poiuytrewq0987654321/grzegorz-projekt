@@ -69,9 +69,64 @@
           </div>
           <!-- Right -->
         </section>
-        <!-- Section: Social media -->
-      
-        <!-- Section: Links  -->
+
+
+        <div class="container jachty">
+            <div class="row jachty-pojedynczy">
+              <div class="col-sm-4 zdjecie">
+                <img id="myImg1" src="zdjecia/shipman-28.jpg" class="zdjecie">
+                <div id="myModal1" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption1"></div>
+                  </div>
+              </div>
+              <div class="col-sm-8">
+                <p>model: Shipman 28</p>
+                <p>rok produkcji: 2012</p>
+                <p>silnik: Beta Marine 14</p>
+                <p>ilość kabin: 2</p>
+                <p>wyposażenie dodatkowe: stojak do zimowania, komplet naczyń, autopilot rumplowy Simrad TP 10</p>
+                <p>cena wynajmu za dobę: 900zł</p>
+              </div>
+            </div>
+            <br>
+
+          <div class="row jachty-pojedynczy">
+            <div class="col-sm-4 zdjecie">
+                <img id="myImg2" src="zdjecia/sasanka700.jpg" class="zdjecie">
+                <div id="myModal2" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img02">
+                    <div id="caption2"></div>
+                  </div>
+            </div>
+            <div class="col-sm-8">
+                <p>model: Sasanka Viva 700</p>
+                <p>rok produkcji: 2021</p>
+                <p>silnik: brak</p>
+                <p>ilość kabin: 1</p>
+                <p>wyposażenie dodatkowe: gazowa kuchenka, listwy led nad szafkami, gniazdka 12V x2</p>
+                <p>cena wynajmu za dobę: 750zł</p>
+            </div>
+          </div>
+
+          <br>
+          <div class="container">
+              <p>formularz rezerwacyjny</p>
+              <form action="welcome_get.php" method="get">
+                Model jachtu: <input type="text" name="model_jachtu"><br>
+                imie i nazwisko <input type="text" name="imie_nazwisko"><br>
+                adres <input type="text" name="adres"><br>
+                telefon <input type="tel" name="telefon"><br>
+                E-mail: <input type="text" name="email"><br>
+                data wynajmu od: <input type="date" name="data_od_kiedy"><br>
+                data wynajmu do: <input type="date" name="data_do_kiedy"><br>
+                <input type="submit">
+                </form>
+          </div>
+
+
         <section class="">
           <div class="container text-center text-md-start mt-5">
             <!-- Grid row -->
@@ -139,6 +194,7 @@
       </footer>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="skrypt.js"></script>
     
 </body>
 </html>
