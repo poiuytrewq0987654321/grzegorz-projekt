@@ -1,3 +1,15 @@
 .navbar-default{
-    background-color: aqua;
+    background-color: #265A6E;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: white;
+}
+
+.logo{
+    height: 10vh;
+    background-image: url("zdjecia/roza_wiatrow.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
 }
